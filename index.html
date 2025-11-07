@@ -1,0 +1,126 @@
+<html>
+<head>
+<title>Simulated Chemistory Reaction</title>
+<script>
+    var feedback = [];
+    function addfeedback(){
+      var s,i;
+      feedback[feedback.length]=document.getElementById("answer").value;
+      s="";
+      for(i=0;i<feedback.length;i++){
+        s+="<li>"+feedback[i]+"</li>";
+      }
+      s+="";
+      document.getElementById("result").innerHTML=s;
+    }
+  </script>
+  
+  <style>
+		
+		header {
+      background-color:#FFFAF0;
+      padding: 1px;
+						text-align: center;
+    }
+    
+  p {
+      font-size: 18px;
+				}
+				
+  body {
+      font-family: "Times New Roman";
+      background-color: #FFFAF0
+    }
+				
+  h1 {
+  font-size: 25px;
+  padding: 10px;
+  display:inline-block;
+}
+
+  h3 {
+  font-size: 20px;
+		}
+				
+				
+  .button-bar {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  border-bottom: 2px solid #ccc;
+}
+
+  .button-bar button {
+  background-color: #8FBC8F;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 5px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+  .button-bar button:hover {
+  background-color: #00008B;
+}
+
+</style>
+
+</head>
+<body>
+ <header>
+<h1>CS1102 - Simulated Chemistory Reaction - 2025/2026 Semester A<br></br>
+<br>Exploring Acid-base Reaction</br>
+<br>Tong Wing Yan 57905703, Tam Wing Nga 58196547, Wong Cheuk Wing 58112774, Wong Ching Yu 58620001 </h1>
+<h3><div class = "left"><ul>Workload Percentage:<br></br>
+  <li>Tong Wing Yan 100%</li><br></br>
+  <li>Tam Wing Nga 100%</li><br></br>
+  <li>Wong Cheuk Wing 100%</li><br></br>
+  <li>Wong Ching Yu 100%</li></h3>
+  </ul>
+  </div>
+ </header>
+    
+
+  <div class="button-bar">
+  <button onclick="location.href='intro.html'">Quiz</button>
+  <button onclick="location.href='https://wingngatam2004-art.github.io/main/'">Experiment 1</button>
+  <button onclick="location.href='smartphone.html'">Experiment 2</button>
+  <button onclick="location.href='systems.html'">Experiment 3</button>
+  <button onclick="location.href='sensors.html'">Experiment 4</button>
+</div>
+
+    
+    
+<h2 style="color:black;"><u>What is Acid-base reaction?</u></h2>
+<p>This is a paragraph.</p>
+
+ <h2 style="color:black;"><u>What is PH-Value?</u></h2>
+ <p>This is a paragraph.</p>
+ <img src="https://www.wein.plus/uploads/editor/images/6739/pH-Wert-Graphik.jpg" alt="PH-Value Color" width="400" />
+ 
+ <h2 style="color:black;"><u>What is the application of Acid-base reaction?</u></h2>
+ <p>This is a paragraph.</p>
+ 
+	
+	<h2 style="color:black;"><u>Feedback</u></h2>
+     <p>Do you have any feedback?</p>
+    <input type="text" id="answer"/>
+    <button id="button_add" onclick="addfeedback();">Add</button>
+    <p>Your feedback:</p>
+    <p id="result"></p>
+ 
+ <h2 style="color:black;"><u>References:</u></h2>
+    <ol>
+      <li>https://www.masterclass.com/articles/basic-photography-101-understanding-camera-lenses</li>
+      <li>https://greatbigphotographyworld.com/camera-viewfinder/</li>
+      <li>https://thinklucid.com/tech-briefs/understanding-digital-image-sensors/</li>
+      <li>https://www.britannica.com/technology/shutter-photography</li>
+    </ol>
+
+ 
+</body>
+</html>
+
